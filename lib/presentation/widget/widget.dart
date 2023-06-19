@@ -12,29 +12,32 @@ class MyInfoText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Text(
-          title,
-          style: const TextStyle(
-            fontSize: 18,
-            color: Colors.green,
-            fontFamily: "Times New Roman",
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(
+            title,
+            style: const TextStyle(
+              fontSize: 18,
+              color: Colors.green,
+              fontFamily: "Times New Roman",
+            ),
           ),
-        ),
-        const SizedBox(height: 4),
-        Text(
-          content,
-          style: const TextStyle(
-            fontSize: 14,
-            color: Colors.red,
-            fontStyle: FontStyle.italic,
-            fontFamily: "Times New Roman",
+          const SizedBox(height: 4),
+          Text(
+            content,
+            style: const TextStyle(
+              fontSize: 14,
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontFamily: "Times New Roman",
+            ),
           ),
-        ),
-        const SizedBox(height: 16),
-      ],
+          const SizedBox(height: 16),
+        ],
+      ),
     );
   }
 }
